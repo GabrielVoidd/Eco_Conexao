@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Formulário de Tópico{% endblock %}
+
+{% block content %}
+<h2>Create a new topic</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
+

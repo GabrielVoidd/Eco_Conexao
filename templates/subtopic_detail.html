@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>{{ subtopic.title }}</h2>
+<p>{{ subtopic.content }}</p>
+<a href="{% url 'subtopic-edit' subtopic.pk %}">Editar</a> |
+<a href="{% url 'subtopic-delete' subtopic.pk %}">Deletar</a>
+<a href="{% url 'subtopic-list' %}">Voltar para os subtópicos</a>
+
+</body>
+</html>
